@@ -1,0 +1,1 @@
+print("Hello World. My name is Almas!!!") #This is a comment
