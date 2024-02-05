@@ -1,3 +1,6 @@
+def func(movies):
+    return [movie for movie in movies if movie["imdb"] > 5.5]
+
 movies = [
 {
 "name": "Usual Suspects", 
@@ -75,3 +78,6 @@ movies = [
 "category": "Romance"
 }
 ]
+
+result = func(movies)
+print(result)
