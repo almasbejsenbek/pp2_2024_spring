@@ -1,3 +1,7 @@
+def func(movies, category):
+    category_movies = [movie for movie in movies if movie["category"] == category]
+    return score(category_movies)
+
 movies = [
 {
 "name": "Usual Suspects", 
@@ -75,3 +79,6 @@ movies = [
 "category": "Romance"
 }
 ]
+
+result = func(movies, "Romance")
+print(result)
