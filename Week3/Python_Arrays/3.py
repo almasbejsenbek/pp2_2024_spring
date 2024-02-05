@@ -1,3 +1,6 @@
+def func(movies, category):
+    return [movie for movie in movies if movie["category"] == category]
+
 movies = [
 {
 "name": "Usual Suspects", 
@@ -75,3 +78,6 @@ movies = [
 "category": "Romance"
 }
 ]
+
+result = func(movies, "Romance")
+print(result)
