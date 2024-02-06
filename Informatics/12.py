@@ -1,0 +1,6 @@
+x = int(input())
+a = str('.')
+print("The next number for the number", x, "is", x + int(1), end="")
+print(".")
+print("The previous number for the number", x, "is", x - int(1), end="")
+print(".")
