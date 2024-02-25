@@ -11,4 +11,10 @@ with open('data.csv', 'w', newline='', encoding="utf8") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['Order', 'Name', 'Count', 'Price', 'Cost'])
     for x in results:
-        writer.writerow([x.group('Order'), x.group('Name'), x.group('Count'), x.group('Price'), x.group('Cost')])
+        writer.writerow(
+        [x.group('Order'), 
+        x.group('Name'), 
+        x.group('Count'), 
+        x.group('Price'), 
+        x.group('Cost')]
+        )
